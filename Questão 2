@@ -7,7 +7,7 @@ int ehVogal(char ch) {
     return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
 }
 
-int contarConsoantes(char *str) {
+int contandoC(char *str) {
     int consoantes = 0;
     while (*str) {
         if (isalpha(*str) && !ehVogal(*str)) {
@@ -25,7 +25,7 @@ int main() {
     if (string[strlen(string) - 1] == '\n') {
         string[strlen(string) - 1] = '\0';
     }
-    int numConsoantes = contarConsoantes(string);
-    printf("NÃºmero de consoantes na string: %d\n", numConsoantes);
+    int numConsoantes = contandoC(string);
+    printf("Número de consoantes na string: %d\n", numConsoantes);
     return 0;
 }
