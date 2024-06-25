@@ -26,7 +26,7 @@ int main() {
     strcpy(livros[0].autor, "Machado de Assis");
     livros[0].anoPublicacao = 1899;
 
-    strcpy(livros[1].titulo, "O Senhor dos AnÃ©is");
+    strcpy(livros[1].titulo, "O Senhor dos Anéis");
     strcpy(livros[1].autor, "J.R.R. Tolkien");
     livros[1].anoPublicacao = 1954;
 
@@ -41,9 +41,9 @@ int main() {
     struct Livro maisRecente = livroMaisRecente(livros);
 
     printf("Livro mais recente:\n");
-    printf("TÃ­tulo: %s\n", maisRecente.titulo);
+    printf("Título: %s\n", maisRecente.titulo);
     printf("Autor: %s\n", maisRecente.autor);
-    printf("Ano de PublicaÃ§Ã£o: %d\n", maisRecente.anoPublicacao);
+    printf("Ano de Publicação: %d\n", maisRecente.anoPublicacao);
 
     return 0;
 }
