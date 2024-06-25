@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-const char* calcularIMC(float peso, float altura) {
+const char* calculacaoIM(float peso, float altura) {
     float imc = peso / (altura * altura);
 
     if (imc < 18.5) {
@@ -14,7 +14,7 @@ const char* calcularIMC(float peso, float altura) {
     } else if (imc >= 35 && imc < 40) {
         return "Obesidade (grau II)";
     } else {
-        return "Obesidade mÃ³rbida (grau III)";
+        return "Obesidade mórbida (grau III)";
     }
 }
 
@@ -26,7 +26,7 @@ int main() {
     printf("Digite sua altura em metros: ");
     scanf("%f", &altura);
 
-    const char *faixa = calcularIMC(peso, altura);
+    const char *faixa = calculacaoIM(peso, altura);
     printf("Seu IMC indica: %s\n", faixa);
 
     return 0;
