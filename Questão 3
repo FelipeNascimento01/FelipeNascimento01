@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool ehPrimo(int num) {
+bool seraqueeP(int num) {
     if (num <= 1) {
         return false;
     }
@@ -16,13 +16,13 @@ bool ehPrimo(int num) {
 int main() {
     int numero;
 
-    printf("Digite um nÃºmero inteiro positivo: ");
+    printf("Digite um número inteiro positivo: ");
     scanf("%d", &numero);
 
-    if (ehPrimo(numero)) {
-        printf("%d Ã© primo.\n", numero);
+    if (seraqueeP(numero)) {
+        printf("%d é primo.\n", numero);
     } else {
-        printf("%d nÃ£o Ã© primo.\n", numero);
+        printf("%d não é primo.\n", numero);
     }
 
     return 0;
